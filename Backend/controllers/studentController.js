@@ -21,7 +21,7 @@ exports.getAllStudents = async (req, res) => {
   }
 };
 
-// Read ke lie 
+//📌 to Read 
 exports.getStudentById = async (req, res) => {
   try {
     const student = await Student.findById(req.params.id);

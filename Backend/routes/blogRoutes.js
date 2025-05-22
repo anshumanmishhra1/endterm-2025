@@ -18,7 +18,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-//📌this one is only for the postman
+//📌this one is only for the postman request
 router.get("/", async (req, res) => {
   try {
     const blogs = await Blog.find();
