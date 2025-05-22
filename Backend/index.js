@@ -1,13 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const cors = require("cors"); // ✅ Add this line
+const cors = require("cors");
 const blogRoutes = require('./routes/blogRoutes');
 
 dotenv.config();
 const app = express();
 
-app.use(cors()); // ✅ Enable CORS for all routes
+app.use(cors()); 
 app.use(express.json());
 
 // Routes

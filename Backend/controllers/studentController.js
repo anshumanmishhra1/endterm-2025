@@ -1,6 +1,6 @@
 const Student = require('../models/Blog');
 
-// Create ke lie 
+//📌Creatting k liye
 exports.createStudent = async (req, res) => {
   try {
     const student = new Student(req.body);
@@ -11,7 +11,7 @@ exports.createStudent = async (req, res) => {
   }
 };
 
-// Read All
+// to read the value
 exports.getAllStudents = async (req, res) => {
   try {
     const students = await Student.find();
